@@ -1,0 +1,31 @@
+#include <iostream>
+
+using namespace std;
+
+template <typename T>
+T mayor(T x, T y)
+{
+   return (x > y)? x: y;
+}
+
+int main()
+{int x,y;
+
+ cout<<"\n ingrese primer numero: ";
+ cin>>x;
+
+ cout<<"\n ingrese segundo numero: ";
+ cin>>y;
+
+ if(x==y)
+ cout<<"\n los numeros son iguales " << endl;
+ else
+ {
+  if(x>y)
+  cout<<"\n el mayor es: "<<x << endl;
+  else
+  cout<<"\n el mayor es: "<<y << endl;
+ }
+
+ return 0;
+}
